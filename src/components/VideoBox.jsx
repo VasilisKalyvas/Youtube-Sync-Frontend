@@ -36,13 +36,6 @@ const VideoBox = ({
       submit: submit,
       currentRoom: currentRoom,
     });
-    setVideo("");
-  };
-  const onChange = (e) => {
-    e.preventDefault();
-
-    setVideo(e.target.value);
-    
   };
 
   const handlePlay = () => {
@@ -75,17 +68,16 @@ const VideoBox = ({
   };
   return (
     <div className="videobox">
-      <form onSubmit={submitHandler}>
       <InputGroup className="col-6">
         <FormControl
-          onChange={(e) => onChange(e)}
+          value={video}
+          onChange={(e) => setVideo(e.target.value)}
           placeholder="Video Link"
         ></FormControl>
-        <Button type="button" variant="success">
-            Watch
+        <Button type="button" onClick={submitHandler} variant="success">
+          Share
         </Button> 
       </InputGroup>
-      </form>
      
       <Card>
         <Card.Body>
