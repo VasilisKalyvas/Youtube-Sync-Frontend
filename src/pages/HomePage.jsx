@@ -9,7 +9,7 @@ import OnlineBox from "../components/OnlineBox";
 import ChatBox from "../components/ChatBox";
 import VideoBox from "../components/VideoBox";
 
-const socket = io.connect("http://localhost:5000");
+const socket = io.connect("https://youtubesync-v1.herokuapp.com/");
 
 const HomePage = () => {
   const [rooms, setRooms] = useState([]);
