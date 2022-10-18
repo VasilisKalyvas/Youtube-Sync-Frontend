@@ -9,7 +9,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import { useState } from "react";
 import io from "socket.io-client";
-const socket = io.connect("http://localhost:5000");
+const socket = io.connect("https://youtubesync-v1.herokuapp.com/");
 
 const ChatBox = ({ messages, currentRoom, setMessages, currentName }) => {
   const MessagesScrollRef = useRef(null);
