@@ -8,7 +8,7 @@ import ReactPlayer from "react-player";
 import { FaPlay, FaPause } from "react-icons/fa";
 import Button from "react-bootstrap/Button";
 import io from "socket.io-client";
-const socket = io.connect("http://localhost:5000");
+const socket = io.connect("https://youtubesync-v1.herokuapp.com/");
 
 const VideoBox = ({
   video,
