@@ -11,7 +11,7 @@ Features:
 3. Real time chat in room.
 4. Real time online users in room.
 5. Real time youtube video synchronization (play/pause/duration/seeking).
-6. Room destroyed if it is empty.
+6. Room dies if it is empty.
 
 This is version 1, version 2 coming soon with many features.
 
